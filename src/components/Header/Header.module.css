@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.header {
+  padding-top: 31.5px;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+.header .navbar .navbar_column {
+  display: flex;
+  align-items: center;
+}
+.header .navbar .navbar_image {
+  transition: 0.35s;
+}
+.header .navbar .navbar_list {
+  margin: 0 60px;
+}
+.header .navbar .navbar_link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1E1E1E;
+  transition: 0.35s;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+.header .navbar .navbar_link:hover {
+  background-color: #fff;
+  border: 2px solid #1E1E1E;
+  border-radius: 10px;
+  transition: 0.35s;
+}
+.header .navbar .navbar_link:active {
+  font-weight: 500;
+  background: #FDCF24;
+  border-radius: 10px;
+  border: 2px solid #FDCF24;
+  color: #1E1E1E;
+}
+.header .navbar .navbar_buttons {
+  margin-left: 153px;
+}
+.header .navbar .navbar_button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  color: #1e1e1e;
+  margin-right: 16px;
+  padding: 13px 20px;
+  background-color: #fff;
+  border: 2px solid #1E1E1E;
+  border-radius: 10px;
+  transition: 0.35s;
+}
+.header .navbar .navbar_button:hover {
+  font-weight: 500;
+  background: #FDCF24;
+  border-radius: 10px;
+  border: 2px solid #FDCF24;
+  color: #1E1E1E;
+}
+.header .navbar .navbar_button:active {
+  background-color: #fff;
+  border: 2px solid #FDCF24;
+}

@@ -1,0 +1,14 @@
+@import './Imports.scss';
+
+body {
+    background-color: #F1F1F1;
+}
+
+.app {
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+    font-family: $ff1;
+
+    .app_main {}
+}

@@ -1,0 +1,80 @@
+@import '../../styles/scss/Imports.scss';
+
+.header {
+    padding-top: 31.5px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        .navbar_column {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar_image {
+            transition: $tr1;
+        }
+
+        .navbar_list {
+            margin: 0 60px;
+        }
+
+        .navbar_link {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $color1;
+            transition: $tr1;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+            border-radius: 3px;
+
+            &:hover {
+                background-color: #fff;
+                border: 2px solid #1E1E1E;
+                border-radius: 10px;
+                transition: $tr1;
+            }
+
+            &:active {
+                font-weight: 500;
+                background: #FDCF24;
+                border-radius: 10px;
+                border: 2px solid #FDCF24;
+                color: #1E1E1E;
+            }
+        }
+
+        .navbar_buttons {
+            margin-left: 153px;
+        }
+
+        .navbar_button {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: right;
+            color: #1e1e1e;
+            margin-right: 16px;
+            padding: 13px 20px;
+            background-color: #fff;
+            border: 2px solid #1E1E1E;
+            border-radius: 10px;
+            transition: $tr1;
+
+            &:hover {
+                font-weight: 500;
+                background: #FDCF24;
+                border-radius: 10px;
+                border: 2px solid #FDCF24;
+                color: #1E1E1E;
+            }
+
+            &:active {
+                background-color: #fff;
+                border: 2px solid #FDCF24;
+            }
+        }
+    }
+}
