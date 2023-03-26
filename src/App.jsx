@@ -10,6 +10,7 @@ import "./styles/css/nullstyle.css";
 import "./styles/css/App.css";
 
 import Header from "./components/Header/Header";
+import Experience from "./components/Experience/Experience";
 
 // Import images (png, jpg, SVG)
 
@@ -26,6 +27,7 @@ function App() {
     >
       <main className={styles.app_main}>
         <Header />
+        <Experience/>
       </main>
     </motion.div>
   );
