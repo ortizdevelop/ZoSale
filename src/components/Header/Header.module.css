@@ -138,7 +138,7 @@
   top: 392px;
   transition: 0.35s;
 }
-.header .banner {
+.header .banner .banner_body {
   width: 100%;
   height: 113.98px;
   display: grid;

@@ -242,10 +242,12 @@ function Header() {
         </motion.article>
       </div>
       <motion.article variants={bounce} custom={14} className={styles.banner}>
-        <p>
-          100+ Trusted Partners ------- Google . Facebook . Insta . Dribbble .
-          Fundbox . Segment
-        </p>
+        <div className={styles.banner_body}>
+          <p>
+            100+ Trusted Partners ------- Google . Facebook . Insta . Dribbble .
+            Fundbox . Segment
+          </p>
+        </div>
       </motion.article>
     </header>
   );
