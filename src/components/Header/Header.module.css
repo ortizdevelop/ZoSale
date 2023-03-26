@@ -67,3 +67,93 @@
   background-color: #fff;
   border: 2px solid #FDCF24;
 }
+.header .content {
+  position: relative;
+  left: 109px;
+  margin-top: 71px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.header .content .info .arrow {
+  transition: 0.35s;
+}
+.header .content .info .title {
+  width: 602px;
+  margin-left: 47px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 160%;
+  color: #1e1e1e;
+  transition: 0.35s;
+}
+.header .content .info .subtitle {
+  margin-top: 19px;
+  width: 467px;
+  margin-left: 47px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 160%;
+  color: #1e1e1e;
+  transition: 0.35s;
+}
+.header .content .info .buttons {
+  margin-top: 48px;
+  margin-left: 47px;
+  padding: 18px 30px;
+  background-color: #FFFFFF;
+  border: 2px solid #1E1E1E;
+  border-radius: 12px;
+  transition: 0.35s;
+}
+.header .content .info .buttons span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 160%;
+  color: #1e1e1e;
+  transition: 0.35s;
+}
+.header .content .info .buttons:nth-child(1) span {
+  background: url("./image/Icon1.png") right no-repeat;
+  padding-right: 31.25px;
+}
+.header .content .info .buttons:nth-child(2) span {
+  background: url("./image/Icon.png") left no-repeat;
+  padding-left: 31.25px;
+}
+.header .content .info .buttons:hover {
+  background-color: #FDCF24;
+  border: 2px solid #FDCF24;
+}
+.header .content .info .rate {
+  margin-top: 24px;
+  margin-left: 47px;
+  transition: 0.35s;
+}
+.header .content .shapes {
+  position: relative;
+  left: 145px;
+  top: 392px;
+  transition: 0.35s;
+}
+.header .banner {
+  width: 100%;
+  height: 113.98px;
+  display: grid;
+  grid-gap: 15px;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  background: #FDCF24;
+  transform: rotate(1.28deg);
+}
+.header .banner p {
+  padding-top: 49.12px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #1e1e1e;
+}

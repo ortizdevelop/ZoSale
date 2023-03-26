@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
+
 // Styles
 import styles from "./Header.module.css";
 
 // Images
 
 import logo from "./image/Logo.png";
+import image from "./image/Designs.png";
+import arrow from "./image/shape.png";
+import rate from "./image/text.png";
+import shapes from "./image/shapes.png";
 
 function Header() {
   return (
@@ -46,6 +52,41 @@ function Header() {
           <button className={styles.navbar_button}>Get Started Free</button>
         </article>
       </nav>
+      <div className={styles.content}>
+        <article className={styles.image}>
+          <img src={image} alt="" />
+        </article>
+        <article className={styles.info}>
+          <img className={styles.arrow} src={arrow} alt="" />
+          <div>
+            <p className={styles.title}>
+              Create Beautiful Apps Using Drag & Drop
+            </p>
+            <p className={styles.subtitle}>
+              With Loopple, you can build your next Bootstrap Dashboard easily
+              using drag and drop.
+            </p>
+          </div>
+          <div>
+            <button className={styles.buttons}>
+              <span>Try For Free</span>
+            </button>
+            <button className={styles.buttons}>
+              <span>Watch Video</span>
+            </button>
+          </div>
+          <img className={styles.rate} src={rate} alt="" />
+        </article>
+        <article className={styles.shapes}>
+          <img src={shapes} alt="" />
+        </article>
+      </div>
+      <article className={styles.banner}>
+        <p>
+          100+ Trusted Partners ------- Google . Facebook . Insta . Dribbble .
+          Fundbox . Segment
+        </p>
+      </article>
     </header>
   );
 }
