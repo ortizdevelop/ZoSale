@@ -1,5 +1,6 @@
 // Import libraries
 import React from "react";
+import { motion } from "framer-motion";
 
 // Import components
 
@@ -14,11 +15,19 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className={styles.app}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className={styles.app}
+    >
       <main className={styles.app_main}>
         <Header />
       </main>
-    </div>
+    </motion.div>
   );
 }
 

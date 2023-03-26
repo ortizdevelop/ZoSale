@@ -11,82 +11,242 @@ import arrow from "./image/shape.png";
 import rate from "./image/text.png";
 import shapes from "./image/shapes.png";
 
+const bounceDown = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: time * 0.2,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const bounceUp = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: time * 0.2,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const bounce = {
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: time * 0.2,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const bounce2 = {
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: time * 0.4,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const fadeLeft = {
+  hidden: {
+    x: -50,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: time * 0.2,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+const fadeRight = {
+  hidden: {
+    x: 50,
+    opacity: 0,
+  },
+  visible: (time) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: time * 0.2,
+      duration: 1,
+      ease: "easeInOut",
+    },
+  }),
+};
+
 function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <ul className={styles.navbar_column}>
-          <li className={styles.navbar_list}>
+          <motion.li
+            variants={bounceUp}
+            custom={1}
+            className={styles.navbar_list}
+          >
             <a href="#s">
               <img className={styles.navbar_image} src={logo} alt="" />
             </a>
-          </li>
-          <li className={styles.navbar_list}>
+          </motion.li>
+          <motion.li
+            variants={bounceUp}
+            custom={2}
+            className={styles.navbar_list}
+          >
             <a href="#s" className={styles.navbar_link}>
               <span>Demos</span>
             </a>
-          </li>
-          <li className={styles.navbar_list}>
+          </motion.li>
+          <motion.li
+            variants={bounceUp}
+            custom={3}
+            className={styles.navbar_list}
+          >
             <a href="#s" className={styles.navbar_link}>
               <span>About</span>
             </a>
-          </li>
-          <li className={styles.navbar_list}>
+          </motion.li>
+          <motion.li
+            variants={bounceUp}
+            custom={4}
+            className={styles.navbar_list}
+          >
             <a href="#s" className={styles.navbar_link}>
               <span>Blog</span>
             </a>
-          </li>
-          <li className={styles.navbar_list}>
+          </motion.li>
+          <motion.li
+            variants={bounceUp}
+            custom={5}
+            className={styles.navbar_list}
+          >
             <a href="#s" className={styles.navbar_link}>
               <span>Pages</span>
             </a>
-          </li>
-          <li className={styles.navbar_list}>
+          </motion.li>
+          <motion.li
+            variants={bounceUp}
+            custom={6}
+            className={styles.navbar_list}
+          >
             <a href="#s" className={styles.navbar_link}>
               <span>Contact</span>
             </a>
-          </li>
+          </motion.li>
         </ul>
         <article className={styles.navbar_buttons}>
-          <button className={styles.navbar_button}>Sign In</button>
-          <button className={styles.navbar_button}>Get Started Free</button>
+          <motion.button
+            variants={bounce}
+            custom={1}
+            className={styles.navbar_button}
+          >
+            Sign In
+          </motion.button>
+          <motion.button
+            variants={bounce}
+            custom={2}
+            className={styles.navbar_button}
+          >
+            Get Started Free
+          </motion.button>
         </article>
       </nav>
       <div className={styles.content}>
-        <article className={styles.image}>
+        <motion.article variants={fadeLeft} custom={7} className={styles.image}>
           <img src={image} alt="" />
-        </article>
+        </motion.article>
         <article className={styles.info}>
-          <img className={styles.arrow} src={arrow} alt="" />
+          <motion.img
+            variants={fadeRight}
+            custom={8}
+            className={styles.arrow}
+            src={arrow}
+            alt=""
+          />
           <div>
-            <p className={styles.title}>
+            <motion.p variants={bounceUp} custom={9} className={styles.title}>
               Create Beautiful Apps Using Drag & Drop
-            </p>
-            <p className={styles.subtitle}>
+            </motion.p>
+            <motion.p
+              variants={bounceUp}
+              custom={10}
+              className={styles.subtitle}
+            >
               With Loopple, you can build your next Bootstrap Dashboard easily
               using drag and drop.
-            </p>
+            </motion.p>
           </div>
           <div>
-            <button className={styles.buttons}>
+            <motion.button
+              variants={bounce}
+              custom={11}
+              className={styles.buttons}
+            >
               <span>Try For Free</span>
-            </button>
-            <button className={styles.buttons}>
+            </motion.button>
+            <motion.button
+              variants={bounce}
+              custom={12}
+              className={styles.buttons}
+            >
               <span>Watch Video</span>
-            </button>
+            </motion.button>
           </div>
-          <img className={styles.rate} src={rate} alt="" />
+          <motion.img
+            variants={bounceDown}
+            custom={13}
+            className={styles.rate}
+            src={rate}
+            alt=""
+          />
         </article>
-        <article className={styles.shapes}>
+        <motion.article
+          variants={fadeRight}
+          custom={13}
+          className={styles.shapes}
+        >
           <img src={shapes} alt="" />
-        </article>
+        </motion.article>
       </div>
-      <article className={styles.banner}>
+      <motion.article variants={bounce} custom={14} className={styles.banner}>
         <p>
           100+ Trusted Partners ------- Google . Facebook . Insta . Dribbble .
           Fundbox . Segment
         </p>
-      </article>
+      </motion.article>
     </header>
   );
 }
