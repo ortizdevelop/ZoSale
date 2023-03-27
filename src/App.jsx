@@ -11,6 +11,7 @@ import "./styles/css/App.css";
 
 import Header from "./components/Header/Header";
 import Experience from "./components/Experience/Experience";
+import Feedback from "./components/Feedback/Feedback";
 
 // Import images (png, jpg, SVG)
 
@@ -28,6 +29,7 @@ function App() {
       <main className={styles.app_main}>
         <Header />
         <Experience />
+        <Feedback />
       </main>
     </motion.div>
   );
