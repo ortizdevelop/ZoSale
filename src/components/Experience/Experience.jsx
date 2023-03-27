@@ -11,6 +11,11 @@ import styles from "./Experience.module.css";
 import bg from "./images/Image.png";
 import icon1 from "./images/icon1.svg";
 import icon2 from "./images/icon2.svg";
+import img1 from "./images/martino.png";
+import img2 from "./images/dorfus.png";
+import img3 from "./images/martino.png";
+import img4 from "./images/square.png";
+import img5 from "./images/gobona.png";
 
 const bounceDown = {
   hidden: {
@@ -182,6 +187,26 @@ function Experience() {
       </article>
       <article className={styles.experience_images}>
         <motion.img custom={5} variants={fadeRight} src={bg} alt="" />
+      </article>
+      <article className={styles.experience_banner}>
+        <p className={styles.banner_title}></p>
+        <ul className={styles.banner_column}>
+          <li className={styles.banner_list}>
+            <img src={img1} alt="" />
+          </li>
+          <li className={styles.banner_list}>
+            <img src={img2} alt="" />
+          </li>
+          <li className={styles.banner_list}>
+            <img src={img3} alt="" />
+          </li>
+          <li className={styles.banner_list}>
+            <img src={img4} alt="" />
+          </li>
+          <li className={styles.banner_list}>
+            <img src={img5} alt="" />
+          </li>
+        </ul>
       </article>
     </div>
   );

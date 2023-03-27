@@ -21,7 +21,7 @@
         line-height: 58px;
         color: #12141d;
         margin-bottom: 27.63px;
-        transition: $tr1; 
+        transition: $tr1;
     }
 
     .experience_subtitle {
@@ -61,5 +61,14 @@
         line-height: 24px;
         color: #12141d;
         transition: $tr1;
+    }
+
+    .banner {
+
+        .banner_title {}
+
+        .banner_column {}
+
+        .banner_list {}
     }
 }
