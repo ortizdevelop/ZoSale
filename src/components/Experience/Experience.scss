@@ -64,11 +64,50 @@
     }
 
     .banner {
+        width: 204.5%;
+        position: relative;
+        bottom: 13px;
+        background: #1E1E1E;
 
-        .banner_title {}
+        .banner_title {
+            color: #FFFFFFCC;
+            margin-top: 88px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
 
-        .banner_column {}
+            span {
+                color: #F4C44C;
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
 
-        .banner_list {}
+        .banner_column {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 88px;
+        }
+
+        .banner_list {
+            border: 3px solid $color1;
+            border-radius: 5px 0px 5px 0px;
+            transition: $tr1;
+
+            img {
+                transition: $tr1;
+            }
+
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #F4C44C;
+            }
+
+            &:active {
+                transform: translateY(5px);
+            }
+        }
     }
 }

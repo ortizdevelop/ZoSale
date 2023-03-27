@@ -27,7 +27,7 @@ function App() {
     >
       <main className={styles.app_main}>
         <Header />
-        <Experience/>
+        <Experience />
       </main>
     </motion.div>
   );

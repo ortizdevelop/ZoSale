@@ -115,7 +115,15 @@ const fadeRight = {
 
 function Experience() {
   return (
-    <div className={styles.experience}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className={styles.experience}
+    >
       <article className={styles.experience_content}>
         <motion.p
           variants={bounceDown}
@@ -188,27 +196,39 @@ function Experience() {
       <article className={styles.experience_images}>
         <motion.img custom={5} variants={fadeRight} src={bg} alt="" />
       </article>
-      <article className={styles.experience_banner}>
-        <p className={styles.banner_title}></p>
-        <ul className={styles.banner_column}>
-          <li className={styles.banner_list}>
-            <img src={img1} alt="" />
-          </li>
-          <li className={styles.banner_list}>
-            <img src={img2} alt="" />
-          </li>
-          <li className={styles.banner_list}>
-            <img src={img3} alt="" />
-          </li>
-          <li className={styles.banner_list}>
-            <img src={img4} alt="" />
-          </li>
-          <li className={styles.banner_list}>
-            <img src={img5} alt="" />
-          </li>
-        </ul>
-      </article>
-    </div>
+      <motion.article
+        variants={bounceDown}
+        custom={1}
+        className={styles.banner}
+      >
+        <div>
+          <motion.p
+            variants={bounceDown}
+            custom={2}
+            className={styles.banner_title}
+          >
+            We take care of more than <span>100K</span> customers
+          </motion.p>
+          <ul className={styles.banner_column}>
+            <li className={styles.banner_list}>
+              <motion.img variants={bounce} custom={3} src={img1} alt="" />
+            </li>
+            <li className={styles.banner_list}>
+              <motion.img variants={bounce} custom={4} src={img2} alt="" />
+            </li>
+            <li className={styles.banner_list}>
+              <motion.img variants={bounce} custom={5} src={img3} alt="" />
+            </li>
+            <li className={styles.banner_list}>
+              <motion.img variants={bounce} custom={6} src={img4} alt="" />
+            </li>
+            <li className={styles.banner_list}>
+              <motion.img variants={bounce} custom={7} src={img5} alt="" />
+            </li>
+          </ul>
+        </div>
+      </motion.article>
+    </motion.div>
   );
 }
 

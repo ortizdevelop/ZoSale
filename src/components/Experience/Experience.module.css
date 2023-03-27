@@ -51,3 +51,43 @@
   color: #12141d;
   transition: 0.35s;
 }
+.experience .banner {
+  width: 204.5%;
+  position: relative;
+  bottom: 13px;
+  background: #1E1E1E;
+}
+.experience .banner .banner_title {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 88px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.experience .banner .banner_title span {
+  color: #F4C44C;
+  text-decoration: underline;
+  opacity: 1;
+}
+.experience .banner .banner_column {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 88px;
+}
+.experience .banner .banner_list {
+  border: 3px solid #1E1E1E;
+  border-radius: 5px 0px 5px 0px;
+  transition: 0.35s;
+}
+.experience .banner .banner_list img {
+  transition: 0.35s;
+}
+.experience .banner .banner_list:hover {
+  cursor: pointer;
+  border: 3px solid #F4C44C;
+}
+.experience .banner .banner_list:active {
+  transform: translateY(5px);
+}
