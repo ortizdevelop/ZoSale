@@ -12,6 +12,7 @@ import "./styles/css/App.css";
 import Header from "./components/Header/Header";
 import Experience from "./components/Experience/Experience";
 import Feedback from "./components/Feedback/Feedback";
+import Allien from "./components/Allien/Allien";
 
 // Import images (png, jpg, SVG)
 
@@ -30,6 +31,7 @@ function App() {
         <Header />
         <Experience />
         <Feedback />
+        <Allien />
       </main>
     </motion.div>
   );
