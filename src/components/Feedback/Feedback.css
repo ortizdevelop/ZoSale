@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.feedback {
+  position: relative;
+  bottom: 12px;
+  padding-top: 166px;
+  background-color: #FBFEFF;
+  padding-bottom: 113px;
+  display: grid;
+  justify-content: center;
+}
+.feedback .feedback_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.feedback .feedback_info .feedback_info_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000;
+  width: 504px;
+  margin-bottom: 38px;
+}
+.feedback .feedback_info .feedback_info_subtitle {
+  width: 570px;
+  font-size: 20px;
+  color: #454242;
+}
+.feedback .feedback_feature .feedback_feature_column {
+  margin-top: 65px;
+  display: flex;
+}
+.feedback .feedback_feature .feedback_feature_list {
+  background-color: #fff;
+  width: 370px;
+  height: 208px;
+  margin-right: 50px;
+  padding: 24px;
+  transition: 0.35s;
+  border: 3px solid #FBFEFF;
+}
+.feedback .feedback_feature .feedback_feature_list:hover {
+  cursor: pointer;
+  border: 3px solid #080A47;
+  border-radius: 6px;
+  box-shadow: 5px 5px 0px 5px #080A47;
+}
+.feedback .feedback_feature .feedback_feature_image {
+  margin-bottom: 16px;
+}
+.feedback .feedback_feature .feedback_feature_title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.feedback .feedback_feature .feedback_feature_subtitle {
+  font-size: 16px;
+  line-height: 160%;
+  color: #414141;
+  width: 322px;
+}

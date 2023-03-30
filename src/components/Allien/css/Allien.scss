@@ -1,0 +1,42 @@
+@import '../../../styles/scss/Imports.scss';
+
+.allien {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__inner {}
+
+    .allien-top {
+        margin-top: 120px;
+        display: flex;
+        gap: 88px;
+
+        &__img {}
+
+        &__column {}
+
+        &__item {}
+
+        &__title {}
+
+        &__subtitle {}
+
+        &__button {}
+    }
+
+    .allien-bottom {
+        display: flex;
+
+        &__title {}
+
+        &__img {}
+
+        &__desc {}
+
+        &__column {}
+
+        &__item {}
+
+        &__text {}
+    }
+}
