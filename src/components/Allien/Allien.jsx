@@ -135,12 +135,14 @@ function Allien() {
             <p className="allien-bottom__title">
               Build a website based on your requirement
             </p>
-            <img src={img2} alt="" className="allien-bottom__img" />
-            <p className="allien-bottom__desc">
-              Whatever you’re building, Sark has covered. With convenient,
-              out-of-the-box features & even more ready-to-use integrations,
-              Sark has everything that you need to build.
-            </p>
+            <div className="allien-bottom__img-and-desc">
+              <img src={img2} alt="" className="allien-bottom__img" />
+              <p className="allien-bottom__desc">
+                Whatever you’re building, Sark has covered. With convenient,
+                out-of-the-box features & even more ready-to-use integrations,
+                Sark has everything that you need to build.
+              </p>
+            </div>
           </div>
           <div>
             <ul className="allien-bottom__column">

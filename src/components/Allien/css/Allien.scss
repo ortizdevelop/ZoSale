@@ -3,6 +3,7 @@
 .allien {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 119.69px;
 
     &__inner {}
 
@@ -10,33 +11,119 @@
         margin-top: 120px;
         display: flex;
         gap: 88px;
+        margin-bottom: 120.47px;
 
-        &__img {}
+        &__img {
+            transition: $tr1;
+        }
 
         &__column {}
 
         &__item {}
 
-        &__title {}
+        &__title {
+            max-width: 537px;
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 58px;
+            color: #12141d;
+            transition: $tr1;
+        }
 
-        &__subtitle {}
+        &__subtitle {
+            max-width: 558px;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+            color: #12141d;
+            transition: $tr1;
+        }
 
-        &__button {}
+        &__button {
+            margin-top: 39px;
+            padding: 18px 30px;
+            background-color: #fff;
+            border: 2px solid #1E1E1E;
+            border-radius: 10px;
+            transition: $tr1;
+
+            span {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: right;
+                color: #000;
+                background: url('../images/arrow.png')right no-repeat;
+                padding-right: 27px;
+                transition: $tr1;
+            }
+
+            &:hover {
+                background-color: $color3;
+                border: 2px solid $color3;
+            }
+        }
     }
 
     .allien-bottom {
         display: flex;
 
-        &__title {}
+        &__title {
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 58px;
+            color: #12141d;
+            max-width: 526px;
+        }
 
-        &__img {}
+        &__img-and-desc {
+            margin-top: 50.46px;
+            display: flex;
+            max-width: 526px;
+        }
 
-        &__desc {}
+        &__img {
+            width: 60px;
+            height: 60px;
+            margin-right: 24px;
+        }
 
-        &__column {}
+        &__desc {
+            max-width: 442px;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+            color: #12141d;
+        }
 
-        &__item {}
+        &__column {
+            margin-left: 72px;
+            max-width: 575px;
+        }
 
-        &__text {}
+        &__item {
+            padding-top: 24px;
+            padding-bottom: 23.99px;
+            cursor: pointer;
+            transition: $tr1;
+
+            &:nth-child(1) {
+                border-bottom: 1px solid #12141d;
+            }
+
+            &:nth-child(2) {
+                border-bottom: 1px solid #12141d;
+            }
+        }
+
+        &__text {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 32px;
+            color: #12141d;
+            background: url('../images/Arrow-right.png') right no-repeat;
+            padding-right: 106.51px;
+            transition: $tr1;
+        }
     }
 }

@@ -3,12 +3,104 @@
 .allien {
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 119.69px;
 }
 .allien .allien-top {
   margin-top: 120px;
   display: flex;
   gap: 88px;
+  margin-bottom: 120.47px;
+}
+.allien .allien-top__img {
+  transition: 0.35s;
+}
+.allien .allien-top__title {
+  max-width: 537px;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #12141d;
+  transition: 0.35s;
+}
+.allien .allien-top__subtitle {
+  max-width: 558px;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #12141d;
+  transition: 0.35s;
+}
+.allien .allien-top__button {
+  margin-top: 39px;
+  padding: 18px 30px;
+  background-color: #fff;
+  border: 2px solid #1E1E1E;
+  border-radius: 10px;
+  transition: 0.35s;
+}
+.allien .allien-top__button span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  color: #000;
+  background: url("../images/arrow.png") right no-repeat;
+  padding-right: 27px;
+  transition: 0.35s;
+}
+.allien .allien-top__button:hover {
+  background-color: #FDCF24;
+  border: 2px solid #FDCF24;
 }
 .allien .allien-bottom {
   display: flex;
+}
+.allien .allien-bottom__title {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #12141d;
+  max-width: 526px;
+}
+.allien .allien-bottom__img-and-desc {
+  margin-top: 50.46px;
+  display: flex;
+  max-width: 526px;
+}
+.allien .allien-bottom__img {
+  width: 60px;
+  height: 60px;
+  margin-right: 24px;
+}
+.allien .allien-bottom__desc {
+  max-width: 442px;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #12141d;
+}
+.allien .allien-bottom__column {
+  margin-left: 72px;
+  max-width: 575px;
+}
+.allien .allien-bottom__item {
+  padding-top: 24px;
+  padding-bottom: 23.99px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.allien .allien-bottom__item:nth-child(1) {
+  border-bottom: 1px solid #12141d;
+}
+.allien .allien-bottom__item:nth-child(2) {
+  border-bottom: 1px solid #12141d;
+}
+.allien .allien-bottom__text {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #12141d;
+  background: url("../images/Arrow-right.png") right no-repeat;
+  padding-right: 106.51px;
+  transition: 0.35s;
 }
