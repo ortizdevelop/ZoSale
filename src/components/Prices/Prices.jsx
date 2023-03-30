@@ -1,5 +1,6 @@
 // Libraries
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 // CSS Styles
 import "./css/prices.css";
@@ -108,18 +109,49 @@ const fadeRight = {
 };
 
 function Prices() {
+  const [activeButton, setActiveButton] = useState("button-active");
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+  };
+
+  const [active, setActive] = useState(false);
+
+  function handleClick() {
+    setActive(!active);
+  }
+
   return (
     <section className="prices">
       <article className="prices-pricing">
         <p className="prices-pricing__title">
-          Best new pricing Plan for your future
+          Best new pricing <br />
+          Plan for your future
         </p>
         <div className="prices-pricing__checkbox">
-          <button className="prices-pricing__button">Monthly</button>
-          <button className="prices-pricing__button">Yearly</button>
+          <button
+            className={`button ${
+              activeButton === "Monthly"
+                ? "button-active"
+                : "prices-pricing__button"
+            }`}
+            onClick={() => handleButtonClick("Monthly")}
+          >
+            Monthly
+          </button>
+          <button
+            className={`button ${
+              activeButton === "Yearly"
+                ? "button-active"
+                : "prices-pricing__button"
+            }`}
+            onClick={() => handleButtonClick("Yearly")}
+          >
+            Yearly
+          </button>
         </div>
         <div className="prices-pricing__plans">
-          <form className="prices-pricing__plans-profile">
+          <form className="prices-pricing__plans-profile plans-form">
             <p className="plans-form__title">Personal</p>
             <p className="plans-form__price">$29</p>
             <ul className="plans-form__column">
@@ -135,7 +167,7 @@ function Prices() {
               <button className="plans-form__button">Purchase Now</button>
             </ul>
           </form>
-          <form className="prices-pricing__plans-professional">
+          <form className="prices-pricing__plans-professional plans-form">
             <p className="plans-form__title">Professional</p>
             <p className="plans-form__price">$99</p>
             <ul className="plans-form__column">
@@ -157,7 +189,7 @@ function Prices() {
               <button className="plans-form__button">Purchase Now</button>
             </ul>
           </form>
-          <form className="prices-pricing__plans-enterprice">
+          <form className="prices-pricing__plans-enterprice plans-form">
             <p className="plans-form__title">Enterprise</p>
             <p className="plans-form__price">$79</p>
             <ul className="plans-form__column">
@@ -178,35 +210,68 @@ function Prices() {
       <article className="prices-qa">
         <p className="prices-qa__title">Questions & Answers</p>
         <ul className="prices-qa__column">
-          <li className="prices-qa__item">
-            <p className="prices-qa__title">
+          <li
+            className="prices-qa__item"
+          >
+            <p className="prices-qa__item-title">
               01. How does the free trial work?
             </p>
-            <p className="prices-qa__text"></p>
+            <p className="prices-qa__text">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
           </li>
-          <li className="prices-qa__item">
-            <p className="prices-qa__title">
+          <li
+            className="prices-qa__item"
+          >
+            <p className="prices-qa__item-title">
               02. How do you find different criteria in your process?
             </p>
-            <p className="prices-qa__text"></p>
+            <p className="prices-qa__text">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
           </li>
-          <li className="prices-qa__item">
-            <p className="prices-qa__title">
+          <li
+            className={active ? "list-active" : "prices-qa__item"}
+            onClick={handleClick}
+          >
+            <p className="prices-qa__item-title">
               03 What do you look for in a founding team?
             </p>
-            <p className="prices-qa__text"></p>
+            <p className="prices-qa__text">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
           </li>
-          <li className="prices-qa__item">
-            <p className="prices-qa__title">
+          <li
+            className={active ? "list-active" : "prices-qa__item"}
+            onClick={handleClick}
+          >
+            <p className="prices-qa__item-title">
               04. Do you recimmend Pay as you go or Pre Pay?
             </p>
-            <p className="prices-qa__text"></p>
+            <p className="prices-qa__text">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
           </li>
-          <li className="prices-qa__item">
-            <p className="prices-qa__title">
+          <li
+            className={active ? "list-active" : "prices-qa__item"}
+            onClick={handleClick}
+          >
+            <p className="prices-qa__item-title">
               05. What do I get for $0 with my plan?
             </p>
-            <p className="prices-qa__text"></p>
+            <p className="prices-qa__text">
+              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
           </li>
         </ul>
       </article>

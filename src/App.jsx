@@ -13,6 +13,7 @@ import Header from "./components/Header/Header";
 import Experience from "./components/Experience/Experience";
 import Feedback from "./components/Feedback/Feedback";
 import Allien from "./components/Allien/Allien";
+import Prices from "./components/Prices/Prices";
 
 // Import images (png, jpg, SVG)
 
@@ -32,6 +33,7 @@ function App() {
         <Experience />
         <Feedback />
         <Allien />
+        <Prices />
       </main>
     </motion.div>
   );

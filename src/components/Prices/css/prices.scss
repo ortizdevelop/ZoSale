@@ -7,29 +7,301 @@
 
     .prices-pricing {
 
-        &__title {}
+        &__title {
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 62px;
+            text-align: center;
+            color: #055f5b;
+        }
 
-        &__checkbox {}
+        &__checkbox {
+            position: relative;
+            left: 40%;
+            margin-top: 53px;
+            width: 250px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: $tr1;
+        }
 
-        &__button {}
+        &__button {
+            padding: 10px 33px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #12141d;
+            background-color: #fff;
+            transition: $tr1;
+        }
 
-        &__plans {}
+        &__plans {
+            margin-top: 78px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 0px;
+            align-items: end;
+        }
 
-        &__plans-column {}
+        &__plans-profile {}
 
-        &__plans-item {}
+        &__plans-professional {}
+
+        &__plans-enterprice {}
+
+        .plans-form {
+            max-width: 370px;
+            max-height: 580px;
+            background: #FAF8F6;
+            border: 1px solid #E2DAD6;
+            border-radius: 36px;
+            margin: 0 auto;
+            padding: 32px 34px;
+            transition: $tr1;
+
+            &__title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #18181b;
+                margin-bottom: 23.52px;
+                transition: $tr1;
+            }
+
+            &__price {
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                color: #18181b;
+                font-weight: 500;
+                padding-bottom: 27.34px;
+                border-bottom: 1px solid #055f5b;
+                transition: $tr1;
+            }
+
+            &__column {
+                margin-top: 21.47px;
+                transition: $tr1;
+            }
+
+            &__item {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #12141d;
+                position: relative;
+                left: 30%;
+                padding: 19px 0px 19px 30px;
+                background: url('../images/icon.svg')left no-repeat;
+                transition: $tr1;
+            }
+
+            &__button {
+                margin-top: 32.94px;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: right;
+                color: #12141d;
+                padding: 20px 94px;
+                background: #FFFFFF;
+                border-radius: 36px;
+                transition: $tr1;
+            }
+
+            &:hover {
+                background: #055F5B;
+                border-radius: 36px;
+                transform: scale(1.05);
+
+                .plans-form__title {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #fff;
+                    margin-bottom: 23.52px;
+                    transition: $tr1;
+                }
+
+                .plans-form__price {
+                    font-size: 20px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 500;
+                    padding-bottom: 27.34px;
+                    border-bottom: 1px solid #FFFFFF;
+                    transition: $tr1;
+                }
+
+                .plans-form__column {
+                    margin-top: 21.47px;
+                    transition: $tr1;
+                }
+
+                .plans-form__item {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    font-weight: 600;
+                    position: relative;
+                    left: 30%;
+                    padding: 19px 0px 19px 30px;
+                    background: url('../images/icon-active.svg')left no-repeat;
+                    transition: $tr1;
+                }
+
+                .plans-form__button {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    text-align: right;
+                    color: #12141d;
+                    padding: 20px 94px;
+                    background: #FFFFFF;
+                    border-radius: 36px;
+                    transition: $tr1;
+
+                    &:hover {
+                        background-color: $color3;
+                    }
+
+                    &:active {
+                        transform: translateY(2px);
+                    }
+                }
+            }
+        }
+
     }
 
     .prices-qa {
+        margin-top: 68px;
+        display: grid;
+        justify-items: center;
+        background-color: #F6F4F0;
+        padding-bottom: 97px;
 
-        &__title {}
+        &__title {
+            margin-top: 65px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 175%;
+            text-align: center;
+            color: #000;
+            margin-bottom: 40px;
 
-        &__column {}
+            &::before {
+                position: relative;
+                top: 50px;
+                left: 490px;
+                display: block;
+                content: '';
+                width: 66.36px;
+                height: 64.85px;
+                background: url('../images/shapes.png');
+            }
+        }
 
-        &__item {}
+        &__column {
+            max-width: 1054px;
+        }
 
-        &__number {}
+        &__item {
+            max-width: 1054px;
+            padding: 21px 10px 30px 21px;
+            border-bottom: 1px solid #E1E0E0;
+            cursor: pointer;
+            transition: $tr1;
 
-        &__text {}
+            &:hover {
+                background: #1E1E1E;
+                border-bottom: 1px solid #E1E0E0;
+
+
+                .prices-qa__item-title {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fff;
+                    background: url('../images/button-active.png')right no-repeat;
+                }
+
+                .prices-qa__text {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 160%;
+                    color: #fff;
+                    margin-top: 17px;
+                    margin-left: 60px;
+                    max-width: 651px;
+                }
+            }
+        }
+
+        &__item-title {
+            max-width: 1054px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            background: url('../images/button.png')right no-repeat;
+            padding-right: 100px;
+            transition: $tr1;
+        }
+
+        &__item-button {
+            max-width: 20px;
+            max-height: 20px;
+            transition: $tr1;
+        }
+
+        &__text {
+            display: none;
+        }
     }
+}
+
+.list-active {
+    max-width: 1054px;
+    padding: 21px 10px 30px 21px;
+    border-bottom: 1px solid #E1E0E0;
+    cursor: pointer;
+    transition: 0.35s;
+    background: #1E1E1E;
+    border-bottom: 1px solid #E1E0E0;
+
+
+    .prices-qa__item-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        background: url('../images/button-active.png')right no-repeat;
+    }
+
+    .prices-qa__text {
+        display: block;
+        font-size: 18px;
+        line-height: 160%;
+        color: #fff;
+        margin-top: 17px;
+        margin-left: 60px;
+        max-width: 651px;
+    }
+
+}
+
+.button-active {
+    padding: 10px 33px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #055F5B;
+    transition: $tr1;
 }
