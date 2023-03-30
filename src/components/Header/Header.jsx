@@ -109,7 +109,15 @@ const fadeRight = {
 
 function Header() {
   return (
-    <header className={styles.header}>
+    <motion.header
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className={styles.header}
+    >
       <nav className={styles.navbar}>
         <ul className={styles.navbar_column}>
           <motion.li
@@ -249,7 +257,7 @@ function Header() {
           </p>
         </div>
       </motion.article>
-    </header>
+    </motion.header>
   );
 }
 

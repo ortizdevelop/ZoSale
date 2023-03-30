@@ -115,20 +115,30 @@ function Prices() {
     setActiveButton(button);
   };
 
-  const [active, setActive] = useState(false);
-
-  function handleClick() {
-    setActive(!active);
-  }
-
   return (
     <section className="prices">
-      <article className="prices-pricing">
-        <p className="prices-pricing__title">
+      <motion.article
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          amount: 0.1,
+          once: true,
+        }}
+        className="prices-pricing"
+      >
+        <motion.p
+          variants={bounceDown}
+          custom={1}
+          className="prices-pricing__title"
+        >
           Best new pricing <br />
           Plan for your future
-        </p>
-        <div className="prices-pricing__checkbox">
+        </motion.p>
+        <motion.div
+          variants={bounceUp}
+          custom={2}
+          className="prices-pricing__checkbox"
+        >
           <button
             className={`button ${
               activeButton === "Monthly"
@@ -149,9 +159,13 @@ function Prices() {
           >
             Yearly
           </button>
-        </div>
+        </motion.div>
         <div className="prices-pricing__plans">
-          <form className="prices-pricing__plans-profile plans-form">
+          <motion.form
+            variants={fadeLeft}
+            custom={4.5}
+            className="prices-pricing__plans-profile plans-form"
+          >
             <p className="plans-form__title">Personal</p>
             <p className="plans-form__price">$29</p>
             <ul className="plans-form__column">
@@ -166,8 +180,12 @@ function Prices() {
               </li>
               <button className="plans-form__button">Purchase Now</button>
             </ul>
-          </form>
-          <form className="prices-pricing__plans-professional plans-form">
+          </motion.form>
+          <motion.form
+            variants={bounce}
+            custom={3.5}
+            className="prices-pricing__plans-professional plans-form"
+          >
             <p className="plans-form__title">Professional</p>
             <p className="plans-form__price">$99</p>
             <ul className="plans-form__column">
@@ -188,8 +206,12 @@ function Prices() {
               </li>
               <button className="plans-form__button">Purchase Now</button>
             </ul>
-          </form>
-          <form className="prices-pricing__plans-enterprice plans-form">
+          </motion.form>
+          <motion.form
+            variants={fadeRight}
+            custom={5.5}
+            className="prices-pricing__plans-enterprice plans-form"
+          >
             <p className="plans-form__title">Enterprise</p>
             <p className="plans-form__price">$79</p>
             <ul className="plans-form__column">
@@ -204,15 +226,23 @@ function Prices() {
               </li>
               <button className="plans-form__button">Purchase Now</button>
             </ul>
-          </form>
+          </motion.form>
         </div>
-      </article>
-      <article className="prices-qa">
-        <p className="prices-qa__title">Questions & Answers</p>
+      </motion.article>
+      <motion.article
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          amount: 0.1,
+          once: true,
+        }}
+        className="prices-qa"
+      >
+        <motion.p variants={bounceDown} custom={1} className="prices-qa__title">
+          Questions & Answers
+        </motion.p>
         <ul className="prices-qa__column">
-          <li
-            className="prices-qa__item"
-          >
+          <motion.li variants={bounceUp} custom={2} className="prices-qa__item">
             <p className="prices-qa__item-title">
               01. How does the free trial work?
             </p>
@@ -221,10 +251,8 @@ function Prices() {
               commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </li>
-          <li
-            className="prices-qa__item"
-          >
+          </motion.li>
+          <motion.li variants={bounceUp} custom={3} className="prices-qa__item">
             <p className="prices-qa__item-title">
               02. How do you find different criteria in your process?
             </p>
@@ -233,11 +261,8 @@ function Prices() {
               commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </li>
-          <li
-            className={active ? "list-active" : "prices-qa__item"}
-            onClick={handleClick}
-          >
+          </motion.li>
+          <motion.li variants={bounceUp} custom={4} className="prices-qa__item">
             <p className="prices-qa__item-title">
               03 What do you look for in a founding team?
             </p>
@@ -246,11 +271,8 @@ function Prices() {
               commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </li>
-          <li
-            className={active ? "list-active" : "prices-qa__item"}
-            onClick={handleClick}
-          >
+          </motion.li>
+          <motion.li variants={bounceUp} custom={5} className="prices-qa__item">
             <p className="prices-qa__item-title">
               04. Do you recimmend Pay as you go or Pre Pay?
             </p>
@@ -259,11 +281,8 @@ function Prices() {
               commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </li>
-          <li
-            className={active ? "list-active" : "prices-qa__item"}
-            onClick={handleClick}
-          >
+          </motion.li>
+          <motion.li variants={bounceUp} custom={6} className="prices-qa__item">
             <p className="prices-qa__item-title">
               05. What do I get for $0 with my plan?
             </p>
@@ -272,9 +291,9 @@ function Prices() {
               commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-          </li>
+          </motion.li>
         </ul>
-      </article>
+      </motion.article>
     </section>
   );
 }
