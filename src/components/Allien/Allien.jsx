@@ -107,64 +107,116 @@ const fadeRight = {
 function Allien() {
   return (
     <section className="allien">
-      <div className="allien__inner">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          amount: 0.2,
+          once: true,
+        }}
+        className="allien__inner"
+      >
         <article className="allien-top">
-          <img src={img1} alt="" className="allien-top__img" />
+          <motion.img
+            variants={bounceDown}
+            custom={1}
+            src={img1}
+            alt=""
+            className="allien-top__img"
+          />
           <ul className="allien-top__column">
-            <li className="allien-top__item">
+            <motion.li
+              variants={fadeRight}
+              custom={2}
+              className="allien-top__item"
+            >
               <p className="allien-top__title">
                 Allien uses a modern server-side templating languages
               </p>
-            </li>
-            <li className="allien-top__item">
+            </motion.li>
+            <motion.li
+              variants={fadeRight}
+              custom={3}
+              className="allien-top__item"
+            >
               <p className="allien-top__subtitle">
                 Here are some templating languages that you can use, with little
                 code snippets to show you how to work and what makes them unique
                 & the modern server-side templating language renders directly/
               </p>
-            </li>
-            <li className="allien-top__item">
+            </motion.li>
+            <motion.li
+              variants={bounceUp}
+              custom={4}
+              className="allien-top__item"
+            >
               <button className="allien-top__button">
                 <span>Try For Free</span>
               </button>
-            </li>
+            </motion.li>
           </ul>
         </article>
         <article className="allien-bottom">
           <div>
-            <p className="allien-bottom__title">
+            <motion.p
+              variants={bounceDown}
+              custom={5}
+              className="allien-bottom__title"
+            >
               Build a website based on your requirement
-            </p>
+            </motion.p>
             <div className="allien-bottom__img-and-desc">
-              <img src={img2} alt="" className="allien-bottom__img" />
-              <p className="allien-bottom__desc">
+              <motion.img
+                variants={bounce}
+                custom={7}
+                src={img2}
+                alt=""
+                className="allien-bottom__img"
+              />
+              <motion.p
+                variants={bounceUp}
+                custom={6}
+                className="allien-bottom__desc"
+              >
                 Whatever you’re building, Sark has covered. With convenient,
                 out-of-the-box features & even more ready-to-use integrations,
                 Sark has everything that you need to build.
-              </p>
+              </motion.p>
             </div>
           </div>
           <div>
             <ul className="allien-bottom__column">
-              <li className="allien-bottom__item">
+              <motion.li
+                variants={bounceDown}
+                custom={8}
+                className="allien-bottom__item"
+              >
                 <p className="allien-bottom__text">
                   Full webflow CMS integration
                 </p>
-              </li>
-              <li className="allien-bottom__item">
+              </motion.li>
+              <motion.li
+                variants={bounceDown}
+                custom={9}
+                className="allien-bottom__item"
+              >
                 <p className="allien-bottom__text">
                   Includes advanced UI elements
                 </p>
-              </li>
-              <li className="allien-bottom__item">
+              </motion.li>
+              <motion.li
+                variants={bounceDown}
+                custom={10}
+                className="allien-bottom__item"
+              >
                 <p className="allien-bottom__text">
                   Any block can be easily customized
                 </p>
-              </li>
+              </motion.li>
             </ul>
           </div>
         </article>
-      </div>
+      </motion.div>
     </section>
   );
 }
