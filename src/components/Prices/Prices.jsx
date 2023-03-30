@@ -111,68 +111,104 @@ function Prices() {
   return (
     <section className="prices">
       <article className="prices-pricing">
-        <p className="prices-pricing__title"></p>
+        <p className="prices-pricing__title">
+          Best new pricing Plan for your future
+        </p>
         <div className="prices-pricing__checkbox">
-          <button className="prices-pricing__button"></button>
-          <button className="prices-pricing__button"></button>
+          <button className="prices-pricing__button">Monthly</button>
+          <button className="prices-pricing__button">Yearly</button>
         </div>
         <div className="prices-pricing__plans">
-          <ul className="prices-pricing__plans-column">
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-          </ul>
-          <ul className="prices-pricing__plans-column">
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-          </ul>
-          <ul className="prices-pricing__plans-column">
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-            <li className="prices-pricing__plans-item"></li>
-          </ul>
+          <form className="prices-pricing__plans-profile">
+            <p className="plans-form__title">Personal</p>
+            <p className="plans-form__price">$29</p>
+            <ul className="plans-form__column">
+              <li className="plans-form__item">
+                <p>10 GB Disk Space</p>
+              </li>
+              <li className="plans-form__item">
+                <p>1 Year Support</p>
+              </li>
+              <li className="plans-form__item">
+                <p>500 Queries</p>
+              </li>
+              <button className="plans-form__button">Purchase Now</button>
+            </ul>
+          </form>
+          <form className="prices-pricing__plans-professional">
+            <p className="plans-form__title">Professional</p>
+            <p className="plans-form__price">$99</p>
+            <ul className="plans-form__column">
+              <li className="plans-form__item">
+                <p>800 GB Disk Space</p>
+              </li>
+              <li className="plans-form__item">
+                <p>10 Year Support</p>
+              </li>
+              <li className="plans-form__item">
+                <p>800 Queries</p>
+              </li>
+              <li className="plans-form__item">
+                <p>Fully Statistics</p>
+              </li>
+              <li className="plans-form__item">
+                <p>Free Custom Domain</p>
+              </li>
+              <button className="plans-form__button">Purchase Now</button>
+            </ul>
+          </form>
+          <form className="prices-pricing__plans-enterprice">
+            <p className="plans-form__title">Enterprise</p>
+            <p className="plans-form__price">$79</p>
+            <ul className="plans-form__column">
+              <li className="plans-form__item">
+                <p>500 GB Disk Space</p>
+              </li>
+              <li className="plans-form__item">
+                <p>5 Year Support</p>
+              </li>
+              <li className="plans-form__item">
+                <p>600 Queries</p>
+              </li>
+              <button className="plans-form__button">Purchase Now</button>
+            </ul>
+          </form>
         </div>
       </article>
       <article className="prices-qa">
-        <p className="prices-qa__title">
-          <ul className="prices-qa__column">
-            <li className="prices-qa__item">
-              <p className="prices-qa__number"></p>
-              <p className="prices-qa__title"></p>
-              <p className="prices-qa__text"></p>
-            </li>
-            <li className="prices-qa__item">
-              <p className="prices-qa__number"></p>
-              <p className="prices-qa__title"></p>
-              <p className="prices-qa__text"></p>
-            </li>
-            <li className="prices-qa__item">
-              <p className="prices-qa__number"></p>
-              <p className="prices-qa__title"></p>
-              <p className="prices-qa__text"></p>
-            </li>
-            <li className="prices-qa__item">
-              <p className="prices-qa__number"></p>
-              <p className="prices-qa__title"></p>
-              <p className="prices-qa__text"></p>
-            </li>
-            <li className="prices-qa__item">
-              <p className="prices-qa__number"></p>
-              <p className="prices-qa__title"></p>
-              <p className="prices-qa__text"></p>
-            </li>
-          </ul>
-        </p>
+        <p className="prices-qa__title">Questions & Answers</p>
+        <ul className="prices-qa__column">
+          <li className="prices-qa__item">
+            <p className="prices-qa__title">
+              01. How does the free trial work?
+            </p>
+            <p className="prices-qa__text"></p>
+          </li>
+          <li className="prices-qa__item">
+            <p className="prices-qa__title">
+              02. How do you find different criteria in your process?
+            </p>
+            <p className="prices-qa__text"></p>
+          </li>
+          <li className="prices-qa__item">
+            <p className="prices-qa__title">
+              03 What do you look for in a founding team?
+            </p>
+            <p className="prices-qa__text"></p>
+          </li>
+          <li className="prices-qa__item">
+            <p className="prices-qa__title">
+              04. Do you recimmend Pay as you go or Pre Pay?
+            </p>
+            <p className="prices-qa__text"></p>
+          </li>
+          <li className="prices-qa__item">
+            <p className="prices-qa__title">
+              05. What do I get for $0 with my plan?
+            </p>
+            <p className="prices-qa__text"></p>
+          </li>
+        </ul>
       </article>
     </section>
   );
