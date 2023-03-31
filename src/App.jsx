@@ -15,6 +15,7 @@ import Feedback from "./components/Feedback/Feedback";
 import Allien from "./components/Allien/Allien";
 import Prices from "./components/Prices/Prices";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 // Import images (png, jpg, SVG)
 
@@ -37,6 +38,7 @@ function App() {
         <Prices />
         <About />
       </main>
+      <Footer />
     </motion.div>
   );
 }
