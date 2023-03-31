@@ -1,2 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.about {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  margin-top: 69px;
+  justify-items: center;
+  background: url("../images/BG.png") center no-repeat;
+}
+.about .about-title {
+  display: grid;
+  justify-items: center;
+  transition: 0.35s;
+  background: url("../images/Vector.png") 68% 50px no-repeat;
+}
+.about .about-title__title {
+  margin-top: 97px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.6;
+}
+.about .about-title__subtitle {
+  font-family: "Kanit", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+}
+.about .about-clients {
+  display: flex;
+  justify-content: center;
+  transition: 0.35s;
+}
+.about .about-clients__column {
+  display: flex;
+  gap: 30px;
+}
+.about .about-clients__item {
+  margin-top: 62.48px;
+  margin-bottom: 80px;
+  padding: 30px 25px;
+  max-width: 370px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+.about .about-clients__item:nth-child(2) .about-clients__profile {
+  position: relative;
+  top: 20px;
+}
+.about .about-clients__item:hover {
+  transform: scale(1.02);
+}
+.about .about-clients__rate {
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.about .about-clients__rate:hover {
+  transform: scale(1.02);
+}
+.about .about-clients__text {
+  max-width: 318px;
+  margin-bottom: 56px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #18181b;
+  transition: 0.35s;
+}
+.about .about-clients__picture {
+  transition: 0.35s;
+}
+.about .about-clients__profile-info {
+  position: relative;
+  bottom: 60px;
+  left: 100px;
+  transition: 0.35s;
+}
+.about .about-clients__name {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1e1e1e;
+  margin-bottom: 2px;
+  transition: 0.35s;
+}
+.about .about-clients__position {
+  font-size: 14px;
+  line-height: 22px;
+  color: #0f172a;
+  transition: 0.35s;
+}
+.about .about-check {
+  display: grid;
+  justify-items: center;
+  transition: 0.35s;
+}
+.about .about-check__title {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  border: 1.5px solid transparent;
+  border-bottom: 1.5px solid #FFFFFF;
+  padding: 5px;
+  transition: 0.35s;
+}
+.about .about-check__title:hover {
+  border: 1.5px solid #FFFFFF;
+}
+.about .about-check__title:active {
+  border: 1.5px solid #FDCF24;
+  color: #1E1E1E;
+  background-color: #FDCF24;
+}

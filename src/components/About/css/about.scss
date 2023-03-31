@@ -1,1 +1,150 @@
-@import '../../../styles/scss/Imports.scss';    
+@import '../../../styles/scss/Imports.scss';
+
+.about {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    margin-top: 69px;
+    justify-items: center;
+    background: url('../images/BG.png')center no-repeat;
+
+    .about-title {
+        display: grid;
+        justify-items: center;
+        transition: $tr1;
+        background: url('../images/Vector.png')68% 50px no-repeat;
+
+        &__title {
+            margin-top: 97px;
+            margin-bottom: 22px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            opacity: 0.6;
+        }
+
+        &__subtitle {
+            font-family: $ff2;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 48px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .about-clients {
+        display: flex;
+        justify-content: center;
+        transition: $tr1;
+
+        &__column {
+            display: flex;
+            gap: 30px;
+        }
+
+        &__item {
+            margin-top: 62.48px;
+            margin-bottom: 80px;
+            padding: 30px 25px;
+            max-width: 370px;
+            background-color: #fff;
+            border-radius: 5px;
+            transition: $tr1;
+
+            &:nth-child(2) {
+
+                .about-clients__profile {
+                    position: relative;
+                    top: 20px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        &__rate {
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: $tr1;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        &__text {
+            max-width: 318px;
+            margin-bottom: 56px;
+            font-size: 18px;
+            line-height: 28px;
+            color: #18181b;
+            transition: $tr1;
+        }
+
+        &__profile {}
+
+        &__picture {
+            transition: $tr1;
+        }
+
+        &__profile-info {
+            position: relative;
+            bottom: 60px;
+            left: 100px;
+            transition: $tr1;
+        }
+
+        &__name {
+            font-family: $ff2;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #1e1e1e;
+            margin-bottom: 2px;
+            transition: $tr1;
+        }
+
+        &__position {
+            font-size: 14px;
+            line-height: 22px;
+            color: #0f172a;
+            transition: $tr1;
+        }
+    }
+
+    .about-check {
+        display: grid;
+        justify-items: center;
+        transition: $tr1;
+
+
+        &__title {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center;
+            color: #fff;
+            font-family: $ff2;
+            border: 1.5px solid transparent;
+            border-bottom: 1.5px solid #FFFFFF;
+            padding: 5px;
+            transition: $tr1;
+
+            &:hover {
+                border: 1.5px solid #FFFFFF;
+            }
+
+            &:active {
+                border: 1.5px solid $color3;
+                color: $color1;
+                background-color: $color3;
+            }
+        }
+    }
+}
