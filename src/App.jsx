@@ -14,6 +14,7 @@ import Experience from "./components/Experience/Experience";
 import Feedback from "./components/Feedback/Feedback";
 import Allien from "./components/Allien/Allien";
 import Prices from "./components/Prices/Prices";
+import About from "./components/About/About";
 
 // Import images (png, jpg, SVG)
 
@@ -34,6 +35,7 @@ function App() {
         <Feedback />
         <Allien />
         <Prices />
+        <About />
       </main>
     </motion.div>
   );
