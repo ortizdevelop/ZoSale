@@ -109,28 +109,76 @@ const fadeRight = {
 
 function Footer() {
   return (
-    <footer className="footer">
+    <motion.footer
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        amount: 0.2,
+        once: true,
+      }}
+      className="footer"
+    >
       <section className="container">
         <article className="footer-info">
-          <img src={logo} alt="" className="footer-info__logo" />
-          <p className="footer-info__text">
+          <motion.img
+            variants={bounceDown}
+            custom={1}
+            src={logo}
+            alt=""
+            className="footer-info__logo"
+          />
+          <motion.p
+            variants={bounceDown}
+            custom={2}
+            className="footer-info__text"
+          >
             Lorem Ipsum is simply dummy text of the printing and industry. Lorem
             Ipsum has been the industry'
-          </p>
+          </motion.p>
           <div className="footer-info__follow">
-            <p className="footer-info__title">Follow Us </p>
+            <motion.p
+              variants={fadeLeft}
+              custom={3}
+              className="footer-info__title"
+            >
+              Follow Us{" "}
+            </motion.p>
             <ul className="footer-info__column">
               <li className="footer-info__item">
-                <img src={img1} alt="" className="footer-info__logos" />
+                <motion.img
+                  variants={bounceUp}
+                  custom={4}
+                  src={img1}
+                  alt=""
+                  className="footer-info__logos"
+                />
               </li>
               <li className="footer-info__item">
-                <img src={img2} alt="" className="footer-info__logos" />
+                <motion.img
+                  variants={bounceUp}
+                  custom={5}
+                  src={img2}
+                  alt=""
+                  className="footer-info__logos"
+                />
               </li>
               <li className="footer-info__item">
-                <img src={img3} alt="" className="footer-info__logos" />
+                <motion.img
+                  variants={bounceUp}
+                  custom={6}
+                  src={img3}
+                  alt=""
+                  className="footer-info__logos"
+                />
               </li>
               <li className="footer-info__item">
-                <img src={img4} alt="" className="footer-info__logos" />
+                <motion.img
+                  variants={bounceUp}
+                  custom={7}
+                  src={img4}
+                  alt=""
+                  className="footer-info__logos"
+                />
               </li>
             </ul>
           </div>
@@ -138,68 +186,146 @@ function Footer() {
         <article className="footer-links">
           <ul className="footer-links__column">
             <li className="footer-links__item">
-              <p className="footer-links__title">Links</p>
+              <motion.p
+                variants={bounceDown}
+                custom={8}
+                className="footer-links__title"
+              >
+                Links
+              </motion.p>
             </li>
-            <li className="footer-links__item">
+            <motion.li
+              variants={bounceDown}
+              custom={10}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Home</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={12}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Pricing</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={14}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">About us</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={16}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Careers</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={18}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Blogs</p>
-            </li>
+            </motion.li>
           </ul>
           <ul className="footer-links__column">
             <li className="footer-links__item">
-              <p className="footer-links__title">Help & Support</p>
+              <motion.p
+                variants={bounceDown}
+                custom={9}
+                className="footer-links__title"
+              >
+                Help & Support
+              </motion.p>
             </li>
-            <li className="footer-links__item">
+            <motion.li
+              variants={bounceDown}
+              custom={11}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Support</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={13}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">FAQ</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={15}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Privacy</p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={17}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Log In </p>
-            </li>
-            <li className="footer-links__item">
+            </motion.li>
+            <motion.li
+              variants={bounceDown}
+              custom={19}
+              className="footer-links__item"
+            >
               <p className="footer-links__links">Sign Up</p>
-            </li>
+            </motion.li>
           </ul>
         </article>
         <article className="footer-contacts">
-          <p className="footer-contacts__title">Contact Details</p>
+          <motion.p
+            variants={bounce}
+            custom={3}
+            className="footer-contacts__title"
+          >
+            Contact Details
+          </motion.p>
           <ul className="footer-contacts__column">
-            <li className="footer-contacts__item">
+            <motion.li
+              variants={fadeLeft}
+              custom={5}
+              className="footer-contacts__item"
+            >
               <p className="footer-contacts__text">
                 2118 Thornridge Connecticut 35624
               </p>
-            </li>
-            <li className="footer-contacts__item">
+            </motion.li>
+            <motion.li
+              variants={bounceUp}
+              custom={7}
+              className="footer-contacts__item"
+            >
               <p className="footer-contacts__text">info@gmail.com</p>
-            </li>
-            <li className="footer-contacts__item">
+            </motion.li>
+            <motion.li
+              variants={fadeRight}
+              custom={9}
+              className="footer-contacts__item"
+            >
               <p className="footer-contacts__text">(205) 555-0100</p>
-            </li>
+            </motion.li>
           </ul>
-          <p className="footer-contacts-form__title">Newslatter</p>
+          <motion.p
+            variants={bounceDown}
+            custom={6}
+            className="footer-contacts-form__title"
+          >
+            Newslatter
+          </motion.p>
           <form
             id="contactForm"
             action="send.php"
             method="post"
             className="footer-contacts-form"
           >
-            <input
+            <motion.input
+              variants={bounceUp}
+              custom={8}
               type="text"
               id="mail"
               name="user_mail"
@@ -207,22 +333,28 @@ function Footer() {
               required
               className="footer-contacts-form__input"
             />
-            <button
+            <motion.button
+              variants={bounce}
+              custom={10}
               type="submit"
               value="Send"
               className="footer-contacts-form__btn"
             >
               SUBSCRIBE
-            </button>
+            </motion.button>
           </form>
         </article>
       </section>
       <article className="footer-copyright">
-        <p className="footer-copyright__title">
+        <motion.p
+          variants={bounceUp}
+          custom={12}
+          className="footer-copyright__title"
+        >
           © 2023.<span>Allen</span> All rights reserved.
-        </p>
+        </motion.p>
       </article>
-    </footer>
+    </motion.footer>
   );
 }
 
