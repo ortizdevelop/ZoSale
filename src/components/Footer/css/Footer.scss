@@ -1,1 +1,231 @@
 @import '../../../styles/scss/Imports.scss';
+
+.footer {
+    max-width: 1920px;
+    padding-bottom: 34px;
+    transition: $tr1;
+
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+
+        .footer-info {
+            transition: $tr1;
+
+            &__logo {
+                margin-bottom: 56px;
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 24px;
+                color: #1e1e1e;
+                margin-bottom: 126px;
+                max-width: 270px;
+            }
+
+            &__follow {}
+
+            &__title {
+                font-family: $ff2;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 120%;
+                color: #1e1e1e;
+                margin-bottom: 28px;
+            }
+
+            &__column {
+                display: flex;
+                align-items: center;
+                gap: 39px;
+            }
+
+            &__item {
+                border-radius: 5px;
+                border: 2px solid transparent;
+                padding: 3px;
+                transition: $tr1;
+
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid #649969;
+                    transform: translateY(2px);
+                }
+            }
+
+            &__logos {}
+        }
+
+        .footer-links {
+            transition: $tr1;
+            display: flex;
+            gap: 94px;
+
+            &__column {
+
+                &:hover {
+
+                    .footer-links__title {
+                        font-weight: bold;
+                    }
+
+                    .footer-links__item {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &__item {
+                transition: $tr1;
+            }
+
+            &__title {
+                font-family: $ff2;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 150%;
+                color: #1e1e1e;
+                margin-bottom: 40px;
+                transition: $tr1;
+            }
+
+            &__links {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 160%;
+                color: #1e1e1e;
+                margin-bottom: 28px;
+                transition: $tr1;
+            }
+        }
+
+        .footer-contacts {
+            transition: $tr1;
+
+            &__title {
+                font-family: $ff2;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 120%;
+                color: #1e1e1e;
+                margin-bottom: 20px;
+            }
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 421px;
+                max-height: 139px;
+                gap: 24px;
+            }
+
+            &__item {
+                max-width: 212px;
+                height: 52px;
+
+                &:nth-child(1) {
+                    background: url('../images/Address.png')left no-repeat;
+                    padding-left: 60px;
+                }
+
+                &:nth-child(2) {
+                    background: url('../images/mail.png')left no-repeat;
+                    padding-left: 60px;
+
+                    .footer-contacts__text {
+                        padding-top: 14px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    background: url('../images/Phone.png')left no-repeat;
+                    padding-left: 60px;
+
+                    .footer-contacts__text {
+                        padding-top: 14px;
+                    }
+                }
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 160%;
+                color: #1e1e1e;
+            }
+        }
+
+        .footer-contacts-form {
+            margin-top: 7px;
+            transition: $tr1;
+
+            &__title {
+                margin-top: 80px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 120%;
+                color: #1e1e1e;
+                padding-bottom: 16px;
+                border-bottom: 1px solid rgba(29, 29, 29, 0.1);
+            }
+
+            &__input {
+                width: 412px;
+                height: 56px;
+                font-size: 16px;
+                line-height: 120%;
+                color: #649969;
+                background: #fff;
+                padding: 18px 24px;
+
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #666775;
+                }
+            }
+
+            &__btn {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #fff;
+                background: #649969;
+                border: 1px solid #649969;
+                padding: 18px 24px;
+                transition: $tr1;
+
+                &:active {
+                    color: #649969;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        display: flex;
+        justify-content: center;
+        transition: $tr1;
+        border-top: 1px solid rgba(30, 30, 30, 0.08);
+
+        &__title {
+            margin-top: 34px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $color1;
+
+            span {
+                color: #649969;
+                font-weight: 500;
+                border-bottom: 2px solid #649969;
+            }
+        }
+    }
+
+}
